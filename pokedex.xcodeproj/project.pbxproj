@@ -11,6 +11,7 @@
 		3DB511D32815B55A00C40D4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB511D22815B55A00C40D4C /* ContentView.swift */; };
 		3DB511D52815B55B00C40D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB511D42815B55B00C40D4C /* Assets.xcassets */; };
 		3DB511D82815B55B00C40D4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB511D72815B55B00C40D4C /* Preview Assets.xcassets */; };
+		3DB511E02815B58800C40D4C /* PokemonAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 3DB511DF2815B58800C40D4C /* PokemonAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB511E02815B58800C40D4C /* PokemonAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = pokedex;
+			packageProductDependencies = (
+				3DB511DF2815B58800C40D4C /* PokemonAPI */,
+			);
 			productName = pokedex;
 			productReference = 3DB511CD2815B55A00C40D4C /* pokedex.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 3DB511C42815B55A00C40D4C;
+			packageReferences = (
+				3DB511DE2815B58800C40D4C /* XCRemoteSwiftPackageReference "PokemonAPI" */,
+			);
 			productRefGroup = 3DB511CE2815B55A00C40D4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DB511DE2815B58800C40D4C /* XCRemoteSwiftPackageReference "PokemonAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kinkofer/PokemonAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DB511DF2815B58800C40D4C /* PokemonAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DB511DE2815B58800C40D4C /* XCRemoteSwiftPackageReference "PokemonAPI" */;
+			productName = PokemonAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DB511C52815B55A00C40D4C /* Project object */;
 }
